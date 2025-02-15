@@ -6,15 +6,13 @@ typedef int64_t Number;
 
 using namespace std;
 
-// Function to read primes from the binary file
 void ReadPrimesFromBinaryFile(const string& filename) {
-    ifstream inFile(filename, ios::binary);  // Open file in binary mode
+    ifstream inFile(filename, ios::binary);
     if (!inFile) {
         cerr << "Error opening file for reading!" << endl;
         return;
     }
 
-    // Read all primes into a vector
     vector<Number> primes;
     Number prime;
 
@@ -25,7 +23,6 @@ void ReadPrimesFromBinaryFile(const string& filename) {
 
     inFile.close();
 
-    // Print the first few primes to check
     for (size_t i = 0; i < primes.size(); ++i) {
         cout << primes[i] << " ";
     }
@@ -33,7 +30,6 @@ void ReadPrimesFromBinaryFile(const string& filename) {
 }
 
 int main() {
-    // Example of reading from the binary file
     string filename = "";  // The file where primes were saved
     std::cout << "Insert the name of the .bin file you want to open: ";
     std::cin >> filename;
