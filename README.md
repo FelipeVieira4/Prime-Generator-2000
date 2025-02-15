@@ -4,8 +4,8 @@ A prime number generator that writes primes to a .bin file.
 # Contents
 This repository contains two C++ files:
 
-`prime_generator.cpp` – The actual prime generator.
-`prime_loader.cpp` – A loader used to open the .bin file and print its contents.
+- `prime_generator.cpp` – The actual prime generator.
+- `prime_loader.cpp` – A loader used to open the .bin file and print its contents.
 This generator has been developed with a focus on performance, even for large numbers. It implements several optimizations to improve execution time and reduce memory usage.
 
 # Optimizations:
