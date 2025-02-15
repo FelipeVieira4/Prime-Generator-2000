@@ -18,7 +18,7 @@ const int sliceSize = 128 * 1024;
 
 // Function to write primes in binary format incrementally (appending to the file)
 void WritePrimesBinary(const std::vector<Number>& primes, const std::string& filename) {
-    std::ofstream outFile(filename, std::ios::binary | std::ios::app);  // Open file in binary mode and append
+    std::ofstream outFile(filename, std::ios::binary | std::ios::app);
     if (!outFile) {
         std::cerr << "Error opening the file for writing!" << std::endl;
         return;
