@@ -15,6 +15,6 @@ This generator has been developed with a focus on performance, even for large nu
 # Compilation
 To compile the program for the best performance, run:
 
-`g++ prime_generator.cpp -o prime_generator -O3 -fopenmp`
-And for the loader:
-`g++ prime_loader.cpp -o prime_loader -O3`
+`g++ prime_generator.cpp -o prime_generator -O3 -fopenmp`<br>
+And for the loader:<br>
+`g++ prime_loader.cpp -o prime_loader -O3`<br>
